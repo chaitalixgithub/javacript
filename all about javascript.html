@@ -1,0 +1,482 @@
+<!--javascript in head-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+    <script>
+        function myfunction(){
+            document.getElementById("demo").innerHTML="paragraph changed.";
+        }
+    </script>
+</head>
+<body>
+    <h2>demo javascript in head</h2>
+    <p id="demo">a paragraph</p>
+    <button type="button" onclick="myfunction()">try it</button>
+</body>
+</html>
+
+
+javascript in body
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>demo javascript in body</h2>
+    <p id="demo">a paragraph</p>
+    <button type="button" onclick="myfunction()">try it</button>
+    <script>function myfunction(){
+        document.getElementById("demo").innerHTML="paragraph changed.";
+    }</script>
+</body>
+</html>
+
+javascript in external file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>external javascript </h2>
+    <p id="demo">a paragraph</p>
+    <button type="button" onclick="myfunction()">try it</button>
+    <p>this example links to "external.js". Function is stored in this file.</p>
+    <script src="/js/myScript.js"></script>
+    
+</body>
+</html>
+
+js display possibilities
+1)innerHTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>first para</h2> 
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML="5+6";
+    </script>
+    
+</body>
+</html>
+
+2)document.write
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>first para</h2> 
+    <p id="demo"></p>
+    <script>
+        document.write(5+6);
+    </script>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>first para</h2> 
+   <button type="button" onclick="document.write(5+6)">try it</button> 
+    
+</body>
+</html>
+
+
+3)window.alert
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>first para</h2> 
+    <p id="demo"></p>
+    <script>
+        window.alert("do you want to continue?")
+       window.alert(5+6);
+    </script>
+    
+</body>
+</html>
+
+4)using console.log
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>first para</h2> 
+    <script>
+       console.log("msehjfvakjefvahebf ");
+    </script>
+    
+</body>
+</html>
+
+
+javascript print
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript code</title>
+</head>
+<body>
+    <h2>the window.print method</h2> 
+    <p>click button to print the page</p>
+    <button onclick="window.print()">print this page</button>
+    
+</body>
+</html>
+
+javascript statements
+
+
+<html>
+    <body>
+        <h2>
+            javascript statements
+        </h2>
+        <p>
+            a<b>javascript program</b>is a list of smthng to be executed by a computer
+        </p>
+        <p id="demo"></p>
+        <script>let x,y,z;
+        x=5;
+        y=6;
+        z=x+y;
+        document.getElementById("demo").innerHTML="the value of z is"+z+".";
+        </script>
+    </body>
+</html>
+
+javascript variables
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Variables</h1>
+
+<p>Strings are written with quotes.</p>
+<p>Numbers are written without quotes.</p>
+
+<p id="demo"></p>
+
+<script>
+const pi = 3.14;
+let person = "John Doe";
+let answer = 'Yes I am!';
+
+document.getElementById("demo").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+</script>
+
+</body>
+</html>
+
+declaring n assigning value in variable
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Variables</h1>
+
+<p>Create a variable, assign a value to it, and display it:</p>
+
+<p id="demo"></p>
+
+<script>
+let carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+</script>
+
+</body>
+</html>
+
+
+redeclaring variables
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>redeclaring a variable using var</h2>
+    <p id="demo"></p>
+    <script>
+        let x=10;
+        {
+            let x=2;
+        }
+        document.getElementById("demo").innerHTML=x;
+
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>redeclaring a variable using var</h2>
+    <p id="demo"></p>
+    <script>
+        var x=10;  //allowed
+        var x=2;  
+        
+        var x=10;   //not allowed
+        let x=2;
+
+        {
+            let x=10;  //not allowed
+        let x=2;
+         }
+
+         {
+            let x=10;    //not allowed
+            var x=2;
+         }
+
+         let x=8;      //allowed
+         {
+            let x=2;
+         }
+         {
+            let x=3;
+         }
+
+        document.getElementById("demo").innerHTML=x;
+
+    </script>
+</body>
+</html>
+
+
+
+javascript hoisting
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>with var u can use a variable beore it is declared</h2>
+    <p id="demo"></p>
+    <script>
+        carName="volvo"
+        document.getElementById("demo").innerHTML=carName;
+        var carName;
+</script>
+</body>
+</html>
+
+
+javascript const
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>javascript constant</h2>
+    <p id="demo"></p>
+
+    <script>
+       try{
+        const PI = 3.1415;   //allowed
+
+        const PI = 3.1415;   //not allowed
+        PI=3.1415;
+
+        const PI;            //not allowed
+        PI=3.1415;
+
+       
+       }
+       catch(err)
+       
+       {
+        document.getElementById("demo").innerHTML=err;
+       }
+</script>
+</body>
+</html>
+
+
+constant arrays
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>javascript constant</h2>
+    <p>declaring a constant array dsnt make the elements unchangeable</p>
+     <p id="demo"></p>
+
+    <script>
+//allowed 
+    const cars=["saab","volvo"];   //change an element
+    cars[0]="toyota";
+
+    cars.push("audi");             //add an element
+       
+        document.getElementById("demo").innerHTML=cars;
+
+//not allowed
+ try{
+            const cars=["saab","volvo"];
+            cars=["toyota","volvo","audi"];
+        }
+        catch (err){
+
+   
+       
+        document.getElementById("demo").innerHTML=err;
+        }
+       
+</script>
+</body>
+</html>
+
+
+constant objects
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>javascript constant</h2>
+    <p>declaring a constant array dsnt make the elements unchangeable</p>
+     <p id="demo"></p>
+     <script>
+       //create array
+//allowed
+ const car={type:"fiat",model:"500",color:"white"};
+       car.color="red";
+       car.owner="john";
+               document.getElementById("demo").innerHTML=car.color;
+       
+
+//not allowed
+       try{
+       const car={type:"fiat",model:"500",color:"white"};
+       car={type:"volvo",model:"EX60","color:"red"};
+       }}
+       catch (err)
+       {
+               document.getElementById("demo").innerHTML=err;
+       }
+</script>
+</body>
+</html>
+
+
+block scope
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>javascript const variables has block scope</h2>
+     <p id="demo"></p>
+     <script>
+        const x=10;
+        {
+            const x=12;
+        }
+
+        document.getElementById("demo").innerHTML="x is"+x;
+     </script>
+</body>
+</html>
+
+redeclaring
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>javascript redeclaring a var variable </h2>
+     <p id="demo"></p>
+     <script>
+ //allowed
+        var x=2;
+        var x=3;
+        x=4;
+
+redeclaring an existing var or let variable to const in same scope
+ //not allowed
+       var x=2;
+       const x=2;
+      
+       {
+        var x=2;
+       let x=2;
+       }
+
+       const x=2;
+       const x=2;
+
+reassigning an existing const variableinsame scope
+//not allowed
+        const x=2;
+        x=2;
+        var x=2;
+        let x=2;
+        const x=2;
+
+       { const x=2;
+        x=2;
+        var x=2;
+        let x=2;
+        const x=2;}
+
+redeclaring a variable with const in another scope or in another block
+  //allowed
+        const x=10;
+
+       { 
+        const x=3;
+       }
+       {
+        const x=4;
+       }
+
+        document.getElementById("demo").innerHTML="x is"+x;
+     </script>
+</body>
+</html>
+-->
+
+
