@@ -477,6 +477,167 @@ redeclaring a variable with const in another scope or in another block
      </script>
 </body>
 </html>
+
+
+//operators
+
+<!DOCTYPE html>
+<html>
+<body>
+  <p>There are different types of JavaScript operators:
+    Arithmetic Operators
+    Assignment Operators
+    Comparison Operators
+    String Operators
+    Logical Operators
+    Bitwise Operators
+    Ternary Operators
+    Type Operators
+    </p>
+    <h1>javascript arithmetic operation</h1> 
+  <p id="demo"></p> 
+  <script>
+    //let x = 10;
+    //let y = 20;
+   // let z = x+y; //addition
+    //let z = x*y; //multiplication
+    let a = 3;
+    let z = (50-10)/a; //subtraction n division
+    document.getElementById("demo").innerHTML =z;
+
+  </script>
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>javascript assignment operator</h1> 
+    <p><table><tr><th >operator</th><th>Example</th><th>Same As</th></tr>
+    <tr><td>=</td><td>x=y</td><td>x=y</td></tr>
+    <tr><td>+=</td><td>x+=y</td><td>x=x+y</td></tr>
+    <tr><td>-=</td><td>x-=y</td><td>x=x-y</td></tr>
+    <tr><td>*=</td><td>x*=y</td><td>x=x*y</td></tr>
+    <tr><td>/=</td><td>x=x/y</td><td>x=x/y</td></tr>
+    <tr><td>%=</td><td>x%=y</td><td>x=x%y</td></tr>
+    <tr><td>**=</td><td>x**=y</td><td>x=x**y</td></tr>
+</table>
+        </p>
+        <h2>addition assignment operator</h2>
+  <p id="demo"></p> 
+  <script>
+    //let x=2; //add
+    //x+=5;
+
+    let x =2; //exponent(x raise to y)
+    let y=5;
+    x=x**y;
+    document.getElementById("demo").innerHTML =x;
+
+  </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>javascript comparison n logical(true or false) operator</h1> 
+    <p><table><tr><th >Operator</th><th>Description</th></tr>
+    <tr><td>==</td><td>equal to</td></tr>
+    <tr><td>===</td><td>equal value and equal type</td></tr>
+    <tr><td>!=</td><td>not equal</td></tr>
+    <tr><td>!==</td><td>not equal value or not equal type</td></tr>
+    <tr><td>></td><td>greater than</td></tr>
+    <tr><td><</td><td>less than</td></tr>
+    <tr><td>>=</td><td>greater than or equal to</td></tr>
+    <tr><td><=</td><td>less than or equal to</td></tr>
+    <tr><td>?</td><td>ternary operator</td></tr>
+</table>
+//<h2>The comparison Operator</h2>
+//<h2>The == Operator</h2>
+//<p>Assign 5 to x, and display the value of the comparison (x == 8):</p>
+//<p id="demo"></p>
+//<script>
+//let x = 5;
+//document.getElementById("demo").innerHTML = (x == 5);
+//</script>
+
+<h2>The conditional(ternary) Operator</h2>
+   <p>Input atharva's age and click the button:</p>
+<input id="age"  />
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  let age = document.getElementById("age").value;
+   let atharva=(age<21)? "too young":"old enough";
+   document.getElementById("demo").innerHTML = atharva ;
+}
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>javascript comparison n logical(true or false) operator</h1> 
+    <p><table><tr><th >Operator</th><th>Description</th><th>Example</th></tr>
+    <tr><td>&&</td><td>and</td><td>(x < 10 && y > 1) is true</td></tr>
+    <tr><td>||</td><td>or</td><td>(x == 5 || y == 5) is false</td></tr>
+    <tr><td>!</td><td>not</td><td>!(x == y) is true</td></tr>
+</table>
+<h2>The Logical Operator</h2>
+<h2>The && Operator (Logical AND)</h2>
+<p>The && operator returns true if both expressions are true, otherwise it returns false.</p>
+<p id="demo"></p>
+<script>
+let x = 6;
+let y = 3;
+document.getElementById("demo").innerHTML = 
+(x < 10 && y < 1) + "<br>" + 
+(x < 10 && y > 1);
+</script>
+
+//<h2>The || Operator (Logical AND)</h2>
+//<p>The || operator returns true if both expressions are true, otherwise it returns false.</p>
+//<p id="demo"></p>
+//<script>
+//let x = 6;
+//let y = 3;
+//document.getElementById("demo").innerHTML = 
+//(x < 10 || y < 1) + "<br>" + 
+//(x < 10 || y > 1);
+//</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>the nullish coalescing Operator</h1>
+<h2>The ?? Operator</h2>
+<p>The ?? operator returns the first argument if it is not nullish (null or undefined). Otherwise it returns the second.</p>
+<p id="demo"></p>
+<script>
+let name = null;
+let text = "missing";
+let result = name ?? text;
+document.getElementById("demo").innerHTML = "The name is " + result; 
+</script>
+</body>
+</html>
+
+
+
+-->
+
+
+
+
+
 -->
 
 
